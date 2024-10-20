@@ -1,0 +1,27 @@
+{
+  "name": "aether/filesystem",
+  "description": "The Aether filesystem package.",
+  "license": "MIT",
+  "type": "library",
+  "support": {
+    "issues": "https://github.com/sxbrsky/aether/issues",
+    "source": "https://github.com/sxbrsky/aether"
+  },
+  "require": {
+    "php": "^8.2"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Aether\\Filesystem\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Aether\\Tests\\Filesystem\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
