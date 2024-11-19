@@ -11,8 +11,8 @@
 
 namespace Aether\Tests\Filesystem;
 
+use Aether\Contracts\Filesystem\Filesystem as FilesystemContract;
 use Aether\Filesystem\Filesystem;
-use Aether\Filesystem\FilesystemInterface;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
 
@@ -20,7 +20,7 @@ use PHPUnit\Framework\TestCase;
 class FilesystemTest extends TestCase
 {
     private ?string $tempDir;
-    private FilesystemInterface $filesystem;
+    private FilesystemContract $filesystem;
 
     protected function setUp(): void
     {

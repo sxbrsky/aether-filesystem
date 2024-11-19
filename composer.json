@@ -9,7 +9,8 @@
   },
   "require": {
     "php": "^8.2",
-    "ext-fileinfo": "*"
+    "ext-fileinfo": "*",
+    "aether/contract": "dev-master"
   },
   "minimum-stability": "dev",
   "autoload": {

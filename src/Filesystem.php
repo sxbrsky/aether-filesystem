@@ -1,5 +1,7 @@
 <?php
 
+namespace Aether\Filesystem;
+
 /*
  * This file is part of the aether/aether.
  *
@@ -9,9 +11,10 @@
  * of the MIT license. See the LICENSE file for details.
  */
 
-namespace Aether\Filesystem;
+use Aether\Contracts\Filesystem\Filesystem as FilesystemContract;
+use Aether\Contracts\Filesystem\IOException;
 
-class Filesystem implements FilesystemInterface
+class Filesystem implements FilesystemContract
 {
     public function exists(string $path): bool
     {
